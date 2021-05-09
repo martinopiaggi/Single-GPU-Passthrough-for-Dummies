@@ -35,6 +35,7 @@ You have to do **only these steps** to successfully run the VM:
 -   [4.2 Setting up the guest OS](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Setting_up_the_guest_OS)
 -   [4.3 Attaching the PCI devices](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Attaching_the_PCI_devices)
 -   [4.4 Video card driver virtualisation detection](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Video_card_driver_virtualisation_detection)
+
 Ok, you should arrive in this step with a working guest VM without any GPU passed. 
 ## Patched VBIOS
 Some GPUs need to be patched to be passed. Find the vbios of your GPU [here](https://www.techpowerup.com/vgabios/). You need to patch the .rom file with an Hex Editor. I used [bless](https://aur.archlinux.org/packages/bless-git/). You have to open the .rom with bless, then delete every character before a specific ``  U``  . To find the right ``  U``   simply use the finder tool built in the Hex Editor with  ``  VIDEO``   as keyword.   After you have found the **first** ``  VIDEO``    , you have to delete every character before the ``   U ``   that immediately precedes the ``  VIDEO``   you have just found. 
