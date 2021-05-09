@@ -16,7 +16,7 @@ guest os: Windows 10
 # Steps from zero to working KVM:
 
 1. [Basic prep Wiki Arch](##BasicPrep) 
-2. [Patched vbios](##Patched VBIOS)
+2. [Patched vbios](##PatchedVBIOS)
 3. [Hook manager and scripts](##hookmanager)
 4. [Running the VM](##RunningtheVM)
 5. [Extra video tutorial](##Extra,videotutorial)
