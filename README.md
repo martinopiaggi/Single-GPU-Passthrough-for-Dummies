@@ -19,7 +19,7 @@ guest os: Windows 10
 2. [patched vbios](##background)
 3. [Hook manager and scripts](##hookmanager)
 4. [Running the VM](##RunningtheVM)
-5. [Extra video tutorial](##Extra:videotutoriall)
+5. [Extra video tutorial](##Extra,videotutorial)
 
 Yes, as you noticed the fifth step is a video tutorial. A video that I find pretty useful. However there are little imperfections that maybe cause you some troubles. Check the [video tutorial step](#Extra: video tutorial) for more info. 
 
@@ -55,7 +55,7 @@ Ok, before running the VM,  pass all the PCI devices related to your GPU with th
 Now it's time for the .rom file of your GPU firmware. After adding all the PCI devices related to your GPU and after enabling the XML editing in virt-manager (open virt-manager>edit>preferences>general>enable xml editing) you have to edit the XML of your PCI devices. Add ```  <rom file = '/file/path/where/do/you/put/the/patched.rom'/>```   between the line ```  </source>```   and ```  <address ...>```  .
  At this point everything is ready to run. After some tests you could eventually reducing the timer.
 
-## Extra: video tutorial
+## Extra, video tutorial
 You can integrate this guide with this [video](https://www.youtube.com/watch?v=BUSrdUoedTo&t=2401s) . From ```  12:04```   the video is aligned with the second step of this guide. The video is very usefull and complete but there are little imperfections: 
 - in the ```  revert.sh```   Muta (the youtuber) has accidentally wrote echo 1 instead of echo 0. Remember that Echo 0 is for detach, echo 1 is for attaching.
 - in the [4.4](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Video_card_driver_virtualisation_detection) of the Arch Wiki Guide suggest to edit the XML adding the line ```  <hidden state='on'/>```   . Muta didn't add this, but in some case it's necessary (like in my case. In fact, without that line my win10 doesn't start).
