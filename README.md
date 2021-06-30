@@ -21,7 +21,7 @@ guest os: Windows 10
 4. [Running the VM](##RunningtheVM)
 5. [Extra video tutorial](##Extra,videotutorial)
 
-Yes, as you noticed the fifth step is a video tutorial. A video that I find pretty useful. However there are little imperfections that maybe cause you some troubles. Check the [video tutorial step](#Extra: video tutorial) for more info. 
+Yes, as you noticed the fifth step is a video tutorial. A video that I find pretty useful. However there are little imperfections that maybe cause you some troubles. Check the [video tutorial step](##Extra,videotutorial) for more info. 
 
 ## Basic prep
 In my opinion there isn't a guide more complete that the [Wiki Arch](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF) one.  
