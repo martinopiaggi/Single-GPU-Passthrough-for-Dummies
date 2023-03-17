@@ -115,10 +115,11 @@ GPU benchmark with Superposition benchmark 2017, just one run.
 
 #### Native
 
+![NATIVE](https://user-images.githubusercontent.com/72280379/225963717-096d4b89-f33b-4879-8aa7-625dc789a5a3.png)
 
 #### Passthrough 
 
-
+![KVM](https://user-images.githubusercontent.com/72280379/225963744-0f9be01e-691a-4b72-93a2-31ac1e7ea4a1.png)
 
 ## Troubleshooting and Resources 
 
