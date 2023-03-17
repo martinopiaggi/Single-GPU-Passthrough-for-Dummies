@@ -121,6 +121,8 @@ GPU benchmark with Superposition benchmark 2017, just one run.
 
 ![KVM](https://user-images.githubusercontent.com/72280379/225963744-0f9be01e-691a-4b72-93a2-31ac1e7ea4a1.png)
 
+*note that RAM and OS are recognized incorrectly, they are the same of native test* 
+
 ## Troubleshooting and Resources 
 
 - a bug that hit me was to have black screen of the KVM at shutdown of the guest with any errors or clue to solve it. Simply black. I found that `start+x >> Device Manager >> Display Adapters >> Right click on GPU >> disable device` procedure before shutting down the guest (it can be automatized with a script using [PnPUtil](https://learn.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil-examples)) solve the bug.
