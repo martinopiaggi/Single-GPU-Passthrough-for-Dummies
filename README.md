@@ -129,9 +129,9 @@ GPU benchmark with Superposition benchmark 2017, just one run.
 
 - [super useless guide to troubleshoot](https://docs.google.com/document/d/17Wh9_5HPqAx8HHk-p2bGlR0E-65TplkG18jvM98I7V8/edit#)
 
-- [more serious guide](https://github.com/QaidVoid/Complete-Single-GPU-Passthrough/blob/master/README.md#enable--verify-iommu)
+- [more serious guide](https://github.com/QaidVoid/Complete-Single-GPU-Passthrough/blob/master/README.md)
 
-- [more serious guide 2 (but not single passthrough)](https://github.com/bryansteiner/gpu-passthrough-tutorial#hardware_requirements)
+- [more serious guide 2 (but not single passthrough)](https://github.com/bryansteiner/gpu-passthrough-tutorial)
 
 - if you want to pass bluetooth, the best option is to pass the PCI associated with the bluetooth device. To pass PCI devices that are not GPUs is super simple, just attach it without any tweak using virt-manager. I notice that if I don't pass the PCI device but Bluetooth device as USB I get error code 10 in win11. In my case a way to fix the error 10 (without the PCI detach) is [stopping bluetooth services and removing the modules of bluetooth](https://www.reddit.com/r/VFIO/comments/nej8me/comment/i4xqnvq/) using modprobe.
 
