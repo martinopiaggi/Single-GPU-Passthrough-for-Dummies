@@ -45,7 +45,7 @@ To speed run the guide you can follow the next steps:
 3) You should add your user to libvirt group (many times it's automatically done)     
   ```usermod -aG kvm,input,libvirt <username>```
 
-4) All the previous steps are basically the stuff wrote [here](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Setting_up_an_OVMF-based_guest_VM) (yes we have jumped from chapter 2.2 of the guide and to chapter 4 in the guide but trust me, I'm an engineer). Using virt-manager (GUI) is easy (even for dummies like us) setting up the VM (this is represented by [the chapter 4.2 of the Arch guide](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Setting_up_the_guest_OS). If you want to run Windows 11 as guest, the most important steps are: 
+4) All the previous steps are basically the stuff wrote [here](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Setting_up_an_OVMF-based_guest_VM) (yes we have jumped from chapter 2.2 of the guide to chapter 4 but trust me, I'm an engineer). Using virt-manager (GUI) is easy (even for dummies like us) setting up the VM (this is represented by [the chapter 4.2 of the Arch guide](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Setting_up_the_guest_OS). If you want to run Windows 11 as guest, the most important steps are: 
 
     - In Overview section, set Chipset to Q35, and Firmware to UEFI (to do this, you have to Select Customize before install on Final Step)
     - Remember to add TPM 2.0 or use a guide to skip TPM check directly during Windows installation ([like this](https://www.tomshardware.com/how-to/bypass-windows-11-tpm-requirement)).
