@@ -40,7 +40,7 @@ To speed run the guide you can follow the next steps:
     - Ubuntu: ``apt install qemu-kvm qemu-utils libvirt-daemon-system libvirt-clients bridge-utils virt-manager ovmf``
     - Arch Linux: ```pacman -S qemu libvirt edk2-ovmf virt-manager dnsmasq ebtables```
 
-2) Enable required services ```enable systemctl enable --now libvirtd```
+2) Enable required services ```systemctl enable --now libvirtd```
 
 3) You should add your user to libvirt group (many times it's automatically done)     
   ```usermod -aG kvm,input,libvirt <username>```
